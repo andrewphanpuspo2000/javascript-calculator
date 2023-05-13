@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+}
+.wrapper {
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-areas:
+    "inputnumber inputnumber inputnumber inputnumber"
+    "ac c percent divide"
+    "seven eight nine time "
+    "four five six mines"
+    "one two three plus"
+    "zeros zeros dott equal";
+  background-color: grey;
+  width: 50%;
+  padding: 1rem;
+  gap: 0.5rem;
+  border-radius: 10px;
+  height: 80vh;
+}
+
+.wrapper > div {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.inputnumber {
+  grid-area: inputnumber;
+  background-color: red;
+  color: white;
+}
+.ac {
+  grid-area: ac;
+  color: white;
+  background: blue;
+}
+.c {
+  grid-area: c;
+  color: white;
+  background: blue;
+}
+.percent {
+  grid-area: percent;
+  color: white;
+  background: blue;
+}
+.divide {
+  grid-area: divide;
+  color: white;
+  background: blue;
+}
+.seven {
+  grid-area: seven;
+  color: white;
+  background: blue;
+}
+.eight {
+  grid-area: eight;
+  color: white;
+  background: blue;
+}
+.nine {
+  grid-area: nine;
+  color: white;
+  background: blue;
+}
+.times {
+  grid-area: time;
+  color: white;
+  background: blue;
+}
+.four {
+  grid-area: four;
+  color: white;
+  background: blue;
+}
+.five {
+  grid-area: five;
+  color: white;
+  background: blue;
+}
+.six {
+  grid-area: six;
+  color: white;
+  background: blue;
+}
+.mines {
+  grid-area: mines;
+  color: white;
+  background: blue;
+}
+.one {
+  grid-area: one;
+  color: white;
+  background: blue;
+}
+.two {
+  grid-area: two;
+  color: white;
+  background: blue;
+}
+.three {
+  grid-area: three;
+  color: white;
+  background: blue;
+}
+.plus {
+  grid-area: plus;
+  color: white;
+  background: blue;
+}
+.zero {
+  grid-area: zeros;
+  color: white;
+  background: blue;
+}
+.dot {
+  grid-area: dott;
+  color: white;
+  background: blue;
+}
+.equal {
+  grid-area: equal;
+  color: white;
+  background: blue;
+}
