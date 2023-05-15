@@ -23,6 +23,7 @@ body {
   gap: 0.5rem;
   border-radius: 10px;
   /* height: 100%; */
+  margin-top: 2rem;
 }
 
 .wrapper > div {
