@@ -30,6 +30,18 @@ getElement.forEach((item) => {
         //   stringDisplay = stringDisplay.slice(0, -1);
         // }
       }
+      if (item.innerText === ".") {
+        const indexOfLastOperator = stringDisplay.lastIndexOf(lastSign);
+        const lastNumberSet = stringDisplay.slice(indexOfLastOperator);
+        console.log(indexOfLastOperator);
+        console.log(lastNumberSet);
+
+        if (lastNumberSet.includes(".")) {
+          return;
+        }
+        if (!lastSign && stringDisplay.includes(".")) return;
+      }
+
       if (item.innerText === "=") {
         const lastCharacter = stringDisplay.slice(-1);
         if (arrOperator.includes(lastCharacter)) {
@@ -39,6 +51,7 @@ getElement.forEach((item) => {
         stringDisplay = result;
         audio.play();
       }
+
       if (item.innerText != "=") stringDisplay += item.innerText;
       displayString(stringDisplay);
     });
@@ -66,13 +79,3 @@ function deleteAll() {
 const displayString = (val) => {
   showinput.innerText = val || 0;
 };
-
-// let showinput = document.getElementById("show");
-// const displayVal = document.querySelectorAll("input");
-
-// displayVal.forEach((itm) => {
-//   itm.addEventListener("click", () => {
-//     showinput.innerHTML += itm.value;
-//   });
-// });
-// console.log(displayVal);
